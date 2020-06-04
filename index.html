@@ -126,7 +126,9 @@
                                     </div>
                                     <div class="hero-btn">
                                         <a class="btn btn-default rex-primary-btn-effect-No" href="#contact" role="button"><span>Contact me</span></a>
-                                        <a class="btn btn-default rex-primary-btn-effect" href="documents/deansresume_14082019.pdf" role="button">Download CV</a>
+                                        <a class="btn btn-default rex-primary-btn-effect-No" href="documents/deansresume_14082019.pdf" role="button">Download CV</a>
+                                        <a class="btn btn-default rex-primary-btn-effect" href="https://golfperspektivajdoo.setmore.com/resourcebookingpage/r54042e5d95bf5518b6b50e3e84ab8d966173be85" role="button">Book a lesson</a>
+
                                     </div>
                                 </div>
                             </div>
@@ -767,28 +769,31 @@
                             <br>
                             <div>
                                 <h4 class="title">Feel Free To Contact Me</h4>
-                                <form class="contact-forms">
+                                <form class="contact-forms" id="form" action="https://app.99inbound.com/api/e/KKEm0u6o" method="POST">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Name">
+                                                <input type="text" id="fullName" class="form-control" placeholder="Name">
                                             </div>
                                             <div class="form-group">
-                                                <input type="email" class="form-control" placeholder="Email">
+                                                <input type="email" id="email" class="form-control" placeholder="Email">
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Phone">
+                                                <input type="text" id="phone" class="form-control" placeholder="Phone">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <textarea class="form-control" rows="6" placeholder="Message"></textarea>
+                                            <textarea class="form-control" id="question" rows="6" placeholder="Message"></textarea>
                                         </div>
                                     </div>
                                 </form>
                                 <div class="contact-btn">
                                     <a class="btn btn-default rex-primary-btn-effect-No dark-color" href="javascript:void(0)" role="button"><span>Cancel</span></a>
-                                    <a class="btn btn-default rex-primary-btn-effect" href="javascript:void(0)" role="button">Send</a>
+                                    <a class="btn btn-default rex-primary-btn-effect" onclick="sendContact()"href="javascript:void(0)" role="button" >Send</a>
                                 </div>
+                            </div>
+                            <div style="position: absolute; left: -5000px;">
+                                <input type="checkbox" name="better_plum_argyle_fork" value="1" tabindex="-1" autocomplete="no">
                             </div>
                         </section>
                     </div>
@@ -808,8 +813,6 @@
         </div>
     </section>
 
-
-
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/grid.js"></script>
     <script src="js/vendor/owl.carousel.min.js"></script>
@@ -823,6 +826,8 @@
     <script src="js/vendor/masonry.pkgd.min.js"></script>
     <script src="js/vendor/skrollr.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/contactform.js"></script>
+
 </body>
 
 </html>
