@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="css/vendor/owl.transitions.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/vendor/modernizr.js"></script>
-</head>
 
 <body class="single">
     <!--[if lt IE 8]>
@@ -769,28 +768,29 @@
                             <br>
                             <div>
                                 <h4 class="title">Feel Free To Contact Me</h4>
-                                <form class="contact-forms" id="form" action="https://app.99inbound.com/api/e/KKEm0u6o" method="POST">
+                                <form class="contact-forms" id="contactForm" action="https://app.99inbound.com/api/e/KKEm0u6o" method="POST">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="text" id="fullName" class="form-control" placeholder="Name">
+                                                <input type="text" id="fullName" name="fullname" class="form-control" placeholder="Name">
                                             </div>
                                             <div class="form-group">
-                                                <input type="email" id="email" class="form-control" placeholder="Email">
+                                                <input type="email" id="email" name="email" class="form-control" placeholder="Email">
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" id="phone" class="form-control" placeholder="Phone">
+                                                <input type="text" id="phone" name="phone" class="form-control" placeholder="Phone">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <textarea class="form-control" id="question" rows="6" placeholder="Message"></textarea>
+                                            <textarea class="form-control" id="question" rows="6" name="question" placeholder="Message"></textarea>
                                         </div>
                                     </div>
                                 </form>
                                 <div class="contact-btn">
                                     <a class="btn btn-default rex-primary-btn-effect-No dark-color" href="javascript:void(0)" role="button"><span>Cancel</span></a>
-                                    <a class="btn btn-default rex-primary-btn-effect" onclick="sendContact()"href="javascript:void(0)" role="button" >Send</a>
+                                    <a class="btn btn-default rex-primary-btn-effect" type="submit" id="submitBtn" role="button"><span>Send</span></a>
                                 </div>
+                                <div class="statusElm"></div>
                             </div>
                             <div style="position: absolute; left: -5000px;">
                                 <input type="checkbox" name="better_plum_argyle_fork" value="1" tabindex="-1" autocomplete="no">
@@ -826,7 +826,8 @@
     <script src="js/vendor/masonry.pkgd.min.js"></script>
     <script src="js/vendor/skrollr.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/contactform.js"></script>
+    <script src="js/contactform_simple.js"></script>
+
 
 </body>
 
