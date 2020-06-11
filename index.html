@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="css/vendor/owl.transitions.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/vendor/modernizr.js"></script>
-</head>
 
 <body class="single">
     <!--[if lt IE 8]>
@@ -119,14 +118,16 @@
                                     <h6>PGA Golf Professional, Golf/Sports Consultant</h6>
                                     <div class="media-link">
                                         <!--<a href="#"><i class="fa fa-twitter-square"></i></a>-->
-                                       <a href="https://www.facebook.com/dean.duzaic"><i class="fa fa-facebook-square"></i></a>
-                                       <a href="https://hr.linkedin.com/in/deanduzaic"><i class="fa fa-linkedin-square"></i></a>
+                                       <a href="https://www.facebook.com/dean.duzaic" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                                       <a href="https://hr.linkedin.com/in/deanduzaic" target="_blank"><i class="fa fa-linkedin-square"></i></a>
                                         <!--<a href="#"><i class="fa fa-instagram"></i></a>-->
                                         <!--<a href="#"><i class="fa fa-google-plus-square"></i></a>-->
                                     </div>
                                     <div class="hero-btn">
-                                        <a class="btn btn-default rex-primary-btn-effect-No" href="#contact" role="button"><span>Contact me</span></a>
-                                        <a class="btn btn-default rex-primary-btn-effect" href="documents/deansresume_14082019.pdf" role="button">Download CV</a>
+                                        <a class="btn btn-default rex-primary-btn-effect-No" href="#contact" role="button" target="_blank"><span>Contact me</span></a>
+                                        <a class="btn btn-default rex-primary-btn-effect-No" href="documents/deansresume_14082019.pdf" role="button" target="_blank">Download CV</a>
+                                        <a class="btn btn-default rex-primary-btn-effect" href="https://golfperspektivajdoo.setmore.com/resourcebookingpage/r54042e5d95bf5518b6b50e3e84ab8d966173be85" role="button" target="_blank">Book a lesson</a>
+
                                     </div>
                                 </div>
                             </div>
@@ -669,13 +670,13 @@
                                             <div class="thumbnail rex-blog-section">
                                                 <img src="img/blog/blog-img1.jpg" alt="...">
                                                 <div class="rex-caption">
-                                                    <a href="https://youtu.be/MsUffWCyObw">
+                                                    <a href="https://youtu.be/MsUffWCyObw" target="_blank">
                                                         <h6>Video on Talent Development in Golf </h6>
                                                     </a>
                                                     <p>If you are a parent or a coach of a young golfer, this video is for you as it aims provide
                                                         examples of good and bad practices, to identify principles which may be used to improve golf
                                                         talent development environments.</p>
-                                                    <a href="https://youtu.be/MsUffWCyObw" class="">View Video</a>
+                                                    <a href="https://youtu.be/MsUffWCyObw" class="" target="_blank">View Video</a>
                                                 </div>
                                                <div class="post-meta">
                                                    <!--
@@ -695,7 +696,7 @@
                                                    </a>
                                                    <p>A critical evaluation of player and participant development models for application in the golf
                                                        talent development environment in a country in Europe where golf is emerging.</p>
-                                                   <a href="documents/Player_participant_development_models.pdf" class="">Read article</a>
+                                                   <a href="documents/Player_participant_development_models.pdf" class="" target="_blank">Read article</a>
                                                </div>
                                                <div class="post-meta">
                                                    <!--
@@ -715,7 +716,7 @@
                                                   </a>
                                                   <p>In almost all endeavours, some people are performing at a significantly higher level than others.
                                                       These individuals are often recognized and labelled as experts. </p>
-                                                  <a href="documents/Expertise_in_golf.pdf" class="">Read article</a>
+                                                  <a href="documents/Expertise_in_golf.pdf" class="" target="_blank">Read article</a>
                                               </div>
                                               <div class="post-meta">
                                                   <!--
@@ -767,28 +768,32 @@
                             <br>
                             <div>
                                 <h4 class="title">Feel Free To Contact Me</h4>
-                                <form class="contact-forms">
+                                <form class="contact-forms" id="contactForm" name="contactForm" action="https://app.99inbound.com/api/e/KKEm0u6o" method="POST">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Name">
+                                                <input type="text" id="fullName" name="fullname" class="form-control" placeholder="Name">
                                             </div>
                                             <div class="form-group">
-                                                <input type="email" class="form-control" placeholder="Email">
+                                                <input type="email" id="email" name="email" class="form-control" placeholder="Email">
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Phone">
+                                                <input type="text" id="phone" name="phone" class="form-control" placeholder="Phone">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <textarea class="form-control" rows="6" placeholder="Message"></textarea>
+                                            <textarea class="form-control" id="question" rows="6" name="question" placeholder="Message"></textarea>
                                         </div>
                                     </div>
                                 </form>
                                 <div class="contact-btn">
                                     <a class="btn btn-default rex-primary-btn-effect-No dark-color" href="javascript:void(0)" role="button"><span>Cancel</span></a>
-                                    <a class="btn btn-default rex-primary-btn-effect" href="javascript:void(0)" role="button">Send</a>
+                                    <a class="btn btn-default rex-primary-btn-effect" type="submit" value="submit" id="submitBtn" role="button"><span>Send</span></a>
                                 </div>
+                                <div class="statusElm"></div>
+                            </div>
+                            <div style="position: absolute; left: -5000px;">
+                                <input type="checkbox" name="better_plum_argyle_fork" value="1" tabindex="-1" autocomplete="no">
                             </div>
                         </section>
                     </div>
@@ -808,8 +813,6 @@
         </div>
     </section>
 
-
-
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/grid.js"></script>
     <script src="js/vendor/owl.carousel.min.js"></script>
@@ -823,6 +826,9 @@
     <script src="js/vendor/masonry.pkgd.min.js"></script>
     <script src="js/vendor/skrollr.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/contactform_simple.js"></script>
+
+
 </body>
 
 </html>
